@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Muhammad Sufyan | Portfolio</title>
+  <title>Muhammad Sufyan Arif | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <style>
     * {
@@ -17,7 +16,7 @@
 
     :root {
       --primary: #32CD32; /* Lime */
-      --secondary: #7CFC00; /* LawnGreen */
+      --secondary: #39FF14; /* Neon Lime */
       --dark: #121212;
       --gray-dark: #1e1e1e;
       --gray: #333;
@@ -112,7 +111,7 @@
       align-items: center;
       padding-top: 80px;
       background: radial-gradient(circle at 90% 10%, rgba(50, 205, 50, 0.1), transparent 60%),
-                  radial-gradient(circle at 10% 90%, rgba(124, 252, 0, 0.1), transparent 60%);
+                  radial-gradient(circle at 10% 90%, rgba(57, 255, 20, 0.1), transparent 60%);
     }
 
     .hero-content {
@@ -163,7 +162,7 @@
       background-origin: border-box;
       background-clip: content-box, border-box;
       animation: morph 8s ease-in-out infinite;
-      box-shadow: 0 0 50px rgba(50, 205, 50, 0.3);
+      box-shadow: 0 0 50px rgba(57, 255, 20, 0.3);
     }
 
     @keyframes morph {
@@ -199,7 +198,7 @@
 
     .cta-btn:hover {
       transform: translateY(-3px);
-      box-shadow: 0 10px 20px rgba(50, 205, 50, 0.3);
+      box-shadow: 0 10px 20px rgba(57, 255, 20, 0.3);
     }
 
     .social-links {
@@ -413,12 +412,476 @@
 
     .project-tag {
       padding: 4px 10px;
-      background: rgba(50, 205, 50, 0.1);
+      background: rgba(57, 255, 20, 0.1);
       border-radius: 50px;
       font-size: 0.8rem;
       color: var(--primary);
     }
 
+    /* Contact Section */
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: var(--gray-dark);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #b3b3b3;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 12px;
+      background: var(--gray);
+      border: none;
+      border-radius: 5px;
+      color: var(--light);
+      font-size: 1rem;
+      transition: box-shadow 0.3s;
+    }
+
+    .form-input:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px var(--primary);
+    }
+
+    .contact-info {
+      margin-top: 3rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .contact-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--gradient);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 1rem;
+      color: var(--light);
+    }
+
+    /* Certificates Section */
+    .certificates-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .certificate-card {
+      background: var(--gray-dark);
+      border-radius: 15px;
+      overflow: hidden;
+      padding: 1.5rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+      max-width: 350px;
+      width: 100%;
+    }
+
+    .certificate-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .certificate-card h3 {
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+
+    .certificate-card p {
+      margin-bottom: 1rem;
+      color: #b3b3b3;
+    }
+
+    .certificate-link {
+      display: inline-block;
+      color: var(--primary);
+      text-decoration: none;
+      margin-top: 1rem;
+      transition: color 0.3s;
+    }
+
+    .certificate-link:hover {
+      color: var(--secondary);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--gray-dark);
+      padding: 3rem 0;
+      text-align: center;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .footer-links a {
+      color: #b3b3b3;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: var(--primary);
+    }
+
+    .copyright {
+      color: #666;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+
+    /* Utility Classes */
+    .text-gradient {
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .floating {
+      animation: floating 3s ease-in-out infinite;
+    }
+
+    .glow {
+      text-shadow: 0 0 5px rgba(57, 255, 20, 0.5);
+    }
+
+    @keyframes floating {
+      0% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-15px);
+      }
+      100% {
+        transform: translateY(0px);
+      }
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .hero-content {
+        flex-direction: column-reverse;
+      }
+
+      .hero-text {
+        text-align: center;
+      }
+
+      .about-content {
+        flex-direction: column;
+      }
+
+      .timeline::after {
+        left: 31px;
+      }
+
+      .timeline-item {
+        width: 100%;
+        left: 0 !important;
+        padding-left: 70px;
+      }
+
+      .timeline-item:nth-child(odd) .timeline-content::after,
+      .timeline-item:nth-child(even) .timeline-content::after {
+        left: -45px;
+        right: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero-text h1 {
+        font-size: 2.5rem;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .profile-img {
+        width: 250px;
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <div class="container nav-container">
+    <a href="#home" class="logo">Muhammad <span>Sufyan Arif</span></a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <div class="container hero-content">
+    <div class="hero-text" data-aos="fade-right" data-aos-delay="200">
+      <h1>Hi, I'm <span class="glow">Muhammad Sufyan Arif</span></h1>
+      <p>Software Engineer | D365 F&O Technical Consultant | Flutter Developer | ML Enthusiast</p>
+      <a href="#contact" class="cta-btn">Get In Touch</a>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/muhammad-sufyan-746746232" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:sufyanarif9292@gmail.com" aria-label="Email"><i class="far fa-envelope"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="hero-img floating" data-aos="fade-left" data-aos-delay="400">
+      <img src="/api/placeholder/400/400" alt="Muhammad Sufyan Arif" class="profile-img">
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">About Me</h2>
+    <div class="about-content">
+      <div class="about-img" data-aos="fade-right" data-aos-delay="200">
+        <div class="timeline-content" style="max-width: 350px;">
+          <h3 class="text-gradient">A bit about myself</h3>
+          <p>An ambitious, confident and diligent Software Engineer with a strong foundation in Computer Science, Artificial Intelligence and Mobile development.</p>
+          <p>I'm seeking to be a part of a reputed company, where I can use my skills and knowledge to learn new things and grow as a software developer.</p>
+          <p>Based in Lahore, Pakistan, I'm passionate about creating meaningful tech solutions that solve real-world problems.</p>
+        </div>
+      </div>
+      <div class="about-text" data-aos="fade-left" data-aos-delay="300">
+        <div class="timeline-content">
+          <h3 class="text-gradient">Skills & Expertise</h3>
+          <div class="skills-container">
+            <span class="skill-tag">Dynamics 365 F&O</span>
+            <span class="skill-tag">X++</span>
+            <span class="skill-tag">Flutter</span>
+            <span class="skill-tag">Dart</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">ADO.NET</span>
+            <span class="skill-tag">SSRS Reporting</span>
+            <span class="skill-tag">Trace Parser</span>
+            <span class="skill-tag">MS SQL</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">FDD & SDD</span>
+            <span class="skill-tag">Computer Vision</span>
+            <span class="skill-tag">Form Customization</span>
+            <span class="skill-tag">Firebase</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">Scikit-learn</span>
+            <span class="skill-tag">Azure DevOps</span>
+            <span class="skill-tag">Software Architecture</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-content">
+          <h3>D365 F&O Technical Consultant</h3>
+          <p>Dynamics Solution & Technology</p>
+          <p>Aug 2023 - Present</p>
+          <ul style="list-style: inside; margin-top: 10px; color: #b3b3b3;">
+            <li>Development on Dynamics 365, with insight to strong best practices, high-quality code in timely manner</li>
+            <li>Using development tools MS X++, Android studio / Dart & MS SQL Server</li>
+            <li>Collaborating with functional consultants and business stakeholders</li>
+            <li>Generating SSRS Reports, Forms and Batch jobs</li>
+            <li>Automating Business processes in batch job using X++ Sys Operation and Runbase framework</li>
+            <li>Identifying exceptions and critical errors using Trace Parser and Debugging</li>
+            <li>Using DevOps for version control management</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-content">
+          <h3>NOC Operations Intern</h3>
+          <p>Systems Limited</p>
+          <p>2023 (3 months)</p>
+          <ul style="list-style: inside; margin-top: 10px; color: #b3b3b3;">
+            <li>Gained hands-on experience in industry-leading software development processes and practices</li>
+            <li>Worked collaboratively within a professional IT environment</li>
+            <li>Assisted in monitoring and maintaining network operations</li>
+            <li>Developed insights into troubleshooting and resolving technical issues</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-content">
+          <h3>Mobile Development Experience</h3>
+          <p>Flutter Developer</p>
+          <p>1 Year Experience</p>
+          <ul style="list-style: inside; margin-top: 10px; color: #b3b3b3;">
+            <li>Developed user-centric mobile applications using Flutter</li>
+            <li>Emphasized clean, professional UI/UX designs and robust functionality</li>
+            <li>Built features aligning with industry standards</li>
+            <li>Focused on performance, responsiveness, and cross-platform compatibility</li>
+            <li>Collaborated with team members to implement scalable solutions</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-content">
+          <h3>Education</h3>
+          <p>University of Management & Technology (UMT), Lahore</p>
+          <p>BS Computer Science, CGPA: 3.06</p>
+          <p>2020 - 2024</p>
+          <p style="margin-top: 10px; color: #b3b3b3;">
+            <strong>Final Year Project:</strong> Echo Sign - A real-time Mobile app converting Handicap/Mute People's hand Gestures to Voice and Text using Computer Vision, Deep Learning/Machine Learning & Flutter Development.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-img">
+          <i class="fas fa-sign-language"></i>
+        </div>
+        <div class="project-content">
+          <h3>Echo Sign</h3>
+          <p>A real-time mobile app converting hand gestures of handicapped/mute people to voice and text, enabling easier communication.</p>
+          <div class="project-tags">
+            <span class="project-tag">Flutter</span>
+            <span class="project-tag">Dart</span>
+            <span class="project-tag">Computer Vision</span>
+            <span class="project-tag">ML</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-img">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <div class="project-content">
+          <h3>Financial Module - D365 F&O</h3>
+          <p>Custom financial module developed for enterprise client with specialized reporting and processing needs.</p>
+          <div class="project-tags">
+            <span class="project-tag">Dynamics 365</span>
+            <span class="project-tag">X++</span>
+            <span class="project-tag">SSRS</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="project-img">
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+        <div class="project-content">
+          <h3>E-Commerce Mobile App</h3>
+          <p>Cross-platform Flutter application with real-time inventory management and payment processing.</p>
+          <div class="project-tags">
+            <span class="project-tag">Flutter</span>
+            <span class="project-tag">Dart</span>
+            <span class="project-tag">Firebase</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="project-img">
+          <i class="fas fa-robot"></i>
+        </div>
+        <div class="project-content">
+          <h3>AI Retail Chatbot</h3>
+          <p>Intelligent customer service solution with natural language processing and automated order handling.</p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Dialogflow</span>
+            <span class="project-tag">NLP</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+        <div class="project-img">
+          <i class="fas fa-brain"></i>
+        </div>
+        <div class="project-content">
+          <h3>Inventory Forecasting Model</h3>
+          <p>Machine learning solution that analyzes historical data to predict future inventory requirements.</p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">TensorFlow</span>
+            <span class="project-tag">Scikit-learn</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Certificates Section -->
+<section id="certificates">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Certifications</h2>
+    <div class="certificates-container">
+      <div class="certificate-card" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="text-gradient">Machine Learning Certification</h3>
+        <p>2023</p>
+        <p>Comprehensive training in ML algorithms, data preprocessing, model evaluation, and practical applications.</p>
+        <a href="https://coursera.org/share/ab5c0570e6c684e1c8d3c684c8860bb4" target="_blank" class="certificate-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+      </div>
+      <div class="certificate-card" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="text-gradient">Python Certification</h3>
+        <p>HackerRank</p>
+        <p>Verified Python programming skills including various Python libraries, data structures, and problem-solving techniques.</p>
+        <a href="https://www.hackerrank.com/certificates/19917b33659b" target="_blank" class="certificate-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
     /* Contact Section */
     .contact-form {
       max-width: 600px;
