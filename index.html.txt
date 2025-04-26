@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Sufyan | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background-color: #0d0d0d;
+      color: #f0f0f0;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: #111;
+      padding: 3rem 2rem;
+      text-align: center;
+      position: relative;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #00bfff;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #00bfff;
+      margin-top: 1rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      color: #aaa;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #00bfff;
+      margin-bottom: 1rem;
+    }
+
+    .card {
+      background: #1a1a1a;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #00bfff55;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      margin-bottom: 0.8rem;
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 3rem;
+    }
+
+    a {
+      color: #00bfff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<header data-aos="fade-down">
+  <img src="sufyan.jpeg" alt="Muhammad Sufyan]">
+  <h1>Muhammad Sufyan </h1>
+  <p>Dynamics 365 F&O Developer | Flutter Developer | ML Enthusiast</p>
+</header>
+
+<section>
+  <div class="card" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>I am Muhammad Sufyan, a passionate developer with a focus on Dynamics 365 Finance and Operations, Flutter mobile development, and Python-based machine learning solutions. I love turning complex problems into simple, beautiful, and intuitive designs and code.</p>
+  </div>
+
+  <div class="card" data-aos="fade-right">
+    <h2>Experience</h2>
+    <ul>
+      <li><strong>Dynamics Solution and Technology</strong> (Present) <br> Dynamics 365 F&O Developer</li>
+      <li><strong>Systems Limited</strong> (Internship - 3 months) <br> NOC Operations Department after 4th Semester</li>
+    </ul>
+  </div>
+
+  <div class="card" data-aos="fade-left">
+    <h2>Skills</h2>
+    <ul>
+      <li>Dynamics 365 F&O Development (X++, Azure DevOps)</li>
+      <li>Flutter App Development (Dart, Firebase)</li>
+      <li>Python Programming (TensorFlow, Scikit-learn)</li>
+      <li>Machine Learning & AI Solutions</li>
+      <li>Chatbot Integration (Dialogflow, Rasa)</li>
+      <li>Cloud Technologies (Azure, Firebase)</li>
+    </ul>
+  </div>
+
+  <div class="card" data-aos="fade-up">
+    <h2>Projects</h2>
+    <ul>
+      <li>Custom Financial & Inventory Modules in D365</li>
+      <li>Cross-Platform Flutter Apps for E-commerce & Services</li>
+      <li>AI Chatbot System for Retail Client</li>
+      <li>Forecasting Models using Python Machine Learning</li>
+    </ul>
+  </div>
+
+  <div class="card" data-aos="zoom-in">
+    <h2>Contact</h2>
+    <ul>
+      <li><strong>Email:</strong> yourname@email.com</li>
+      <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourname" target="_blank">linkedin.com/in/yourname</a></li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a></li>
+    </ul>
+  </div>
+
+</section>
+
+<footer>
+  &copy; 2025 Muhammad Sufyan | Designed with ❤️
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1200,
+  });
+</script>
+
+</body>
+</html>
