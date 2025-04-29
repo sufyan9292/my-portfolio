@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- AOS CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+
+<!-- AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+
     <title>Developer Portfolio</title>
     <style>
         :root {
@@ -40,7 +47,9 @@
         }
         
         header {
-            height: 100vh;
+            padding-top: 100px;
+            height: 50vh;
+            /* height: 100vh; */
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -94,7 +103,7 @@
         .logo {
             font-size: 24px;
             font-weight: bold;
-            color: var(--neon-blue);
+            color: var(--neon-green);
             text-shadow: 0 0 10px var(--neon-blue);
         }
         
@@ -630,68 +639,68 @@
         </div>
     </section>
 
-    <section id="experience" class="hidden">
-        <h2 class="section-title">Work Experience</h2>
+    <section id="experience" class="hidden" data-aos="fade-up">
+        <h2 class="section-title" data-aos="fade-up">Work Experience</h2>
         <div class="experience-container">
-            <div class="experience-card">
+            <div class="experience-card" data-aos="fade-up" data-aos-delay="100">
                 <h3 class="experience-title">Microsoft Dynamics 365 FnO Developer</h3>
                 <p class="experience-duration">2023 - Present (2 years)</p>
                 <div class="experience-details">
-                    <div class="experience-detail">
+                    <div class="experience-detail" data-aos="fade-up" data-aos-delay="200">
                         <span class="detail-icon">✦</span>
                         <p>Developed and customized SSRS reports for various business modules</p>
                     </div>
-                    <div class="experience-detail">
+                    <div class="experience-detail" data-aos="fade-up" data-aos-delay="300">
                         <span class="detail-icon">✦</span>
                         <p>Created query-based reports for data analysis and business intelligence</p>
                     </div>
-                    <div class="experience-detail">
+                    <div class="experience-detail" data-aos="fade-up" data-aos-delay="400">
                         <span class="detail-icon">✦</span>
                         <p>Implemented form customizations across different D365 modules</p>
                     </div>
-                    <div class="experience-detail">
+                    <div class="experience-detail" data-aos="fade-up" data-aos-delay="500">
                         <span class="detail-icon">✦</span>
                         <p>Built integrations between D365 and external systems</p>
                     </div>
                 </div>
             </div>
             
-            <div class="experience-card">
+            <div class="experience-card" data-aos="fade-up" data-aos-delay="600">
                 <h3 class="experience-title">Flutter Developer</h3>
                 <p class="experience-duration">2023 - Present (2 years)</p>
                 <div class="experience-details">
-                    <div class="experience-detail">
+                    <div class="experience-detail" data-aos="fade-up" data-aos-delay="700">
                         <span class="detail-icon">✦</span>
                         <p>Developed Capstain by Pall Mall - a feature-rich mobile application</p>
                     </div>
-                    <div class="experience-detail">
+                    <div class="experience-detail" data-aos="fade-up" data-aos-delay="800">
                         <span class="detail-icon">✦</span>
                         <p>Created an e-commerce mobile application with full shopping features</p>
                     </div>
-                    <div class="experience-detail">
+                    <div class="experience-detail" data-aos="fade-up" data-aos-delay="900">
                         <span class="detail-icon">✦</span>
                         <p>Integrated chatbots with mobile applications for enhanced user support</p>
                     </div>
-                    <div class="experience-detail">
+                    <div class="experience-detail" data-aos="fade-up" data-aos-delay="1000">
                         <span class="detail-icon">✦</span>
                         <p>Implemented state management solutions and complex UI animations</p>
                     </div>
                 </div>
             </div>
             
-            <div class="experience-card">
+            <div class="experience-card" data-aos="fade-up" data-aos-delay="1100">
                 <h3 class="experience-title">Python & Machine Learning Developer</h3>
                 <p class="experience-duration">Part-time / Project-based</p>
                 <div class="experience-details">
-                    <div class="experience-detail">
+                    <div class="experience-detail" data-aos="fade-up" data-aos-delay="1200">
                         <span class="detail-icon">✦</span>
                         <p>Implemented machine learning algorithms for data analysis</p>
                     </div>
-                    <div class="experience-detail">
-                        <span class="detail-icon">✦</span>
+                    <div class="experience-detail" data-aos="fade-up" data-aos-delay="1300">
+                        <span class="detail -icon">✦</span>
                         <p>Developed data processing pipelines using Python</p>
                     </div>
-                    <div class="experience-detail">
+                    <div class="experience-detail" data-aos="fade-up" data-aos-delay="1400">
                         <span class="detail-icon">✦</span>
                         <p>Created visualization tools for complex datasets</p>
                     </div>
@@ -817,12 +826,12 @@
 
     <footer>
         <div class="footer-content">
-            <div class="social-links">
+            <!-- <div class="social-links">
                 <a href="#" class="social-icon">in</a>
                 <a href="#" class="social-icon">gh</a>
                 <a href="#" class="social-icon">tw</a>
                 <a href="#" class="social-icon">dr</a>
-            </div>
+            </div> -->
             <p class="footer-text">© 2025 Developer Portfolio. All rights reserved.</p>
         </div>
     </footer>
@@ -884,5 +893,8 @@
             });
         });
     </script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
